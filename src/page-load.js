@@ -1,16 +1,18 @@
-export default function(){
-    let element = document.createElement("div");
-    element.innerHTML =` <ul>
-        <li id="home">Home</li>
-        <li>Meun</li>
-        <li>About</li>
-    </ul>`;
+import './style.css';
 
-    document.addEventListener('click',function(e){
-        if(e.target && e.target.id== 'home'){
-              console.log("working")
-         }
-     });
+export default function nav(){
+    let nav = document.createElement("div");
 
-    return element
+    nav.innerHTML =`<input type="radio" name="tabs" id="tab1" checked />
+                        <label for="tab1">Home</label>
+                        <input type="radio" name="tabs" id="tab2" />
+                        <label for="tab2">Menu</label>
+                        <input type="radio" name="tabs" id="tab3" />
+                        <label for="tab3">About</label>`;
+
+    nav.classList.add("nav");
+
+    return nav;
     } 
+
+
