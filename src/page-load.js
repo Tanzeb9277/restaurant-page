@@ -1,6 +1,6 @@
 import './style.css';
 
-export default function nav(){
+function nav(){
     let nav = document.createElement("div");
 
     nav.innerHTML =`<input type="radio" name="tabs" id="tab1" checked />
@@ -14,5 +14,19 @@ export default function nav(){
 
     return nav;
     } 
+
+    function main(){
+        let main = document.createElement("div");
+
+        main.innerHTML = `<div class="tab content1">Tab1 Contents</div>
+                            <div class="tab content2">Tab2 Contents</div>
+                            <div class="tab content3">Tab3 Contents</div>`;
+
+        main.setAttribute("id", "main");
+        return main;
+    }
+
+    export {nav, main};
+
 
 
