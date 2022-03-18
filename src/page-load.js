@@ -1,4 +1,5 @@
 import './style.css';
+import home from './home';
 
 function nav(){
     let nav = document.createElement("div");
@@ -18,9 +19,7 @@ function nav(){
     function main(){
         let main = document.createElement("div");
 
-        main.innerHTML = `<div class="tab content1">Tab1 Contents</div>
-                            <div class="tab content2">Tab2 Contents</div>
-                            <div class="tab content3">Tab3 Contents</div>`;
+        main.append(home())
 
         main.setAttribute("id", "main");
         return main;

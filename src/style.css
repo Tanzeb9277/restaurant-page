@@ -1,5 +1,5 @@
 .nav {
-    background-color: aliceblue;
+    background-color: #fde5ba;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -13,12 +13,12 @@ input + label { display: inline-block } /* show labels in line */
 input ~ .tab { display: none }
 
 input + label {             /* box with rounded corner */
-    border: 1px solid #999;
     background: #EEE;
     padding: 4px 12px;
     border-radius: 4px 4px 0 0;
     position: relative;
     top: 1px;
+    font-size: 18px;
   }
   input:checked + label {     /* white background for selected tab */
     background: #FFF;
@@ -28,6 +28,8 @@ input + label {             /* box with rounded corner */
     border-top: 1px solid #999;
     padding: 12px;
   }
+
+
 
   body .heading {
     font-size: 8rem;
@@ -63,10 +65,10 @@ input + label {             /* box with rounded corner */
   body .container {
     margin: 0px;
     position: fixed;
-    right: -191px;
-    top: 0;
+    right: -153px;
+    top: 100px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     gap: 1rem;
     animation: move 4.5s linear infinite alternate;
     z-index: -1;
@@ -85,4 +87,18 @@ input + label {             /* box with rounded corner */
     width: 100%;
     height: 100%;
     border-radius: inherit;
+  }
+
+  .about{
+    text-align: center;
+    /* width: 1000px; */
+    /* margin: 30vh auto!Important; */
+    /* margin: 0 50%; */
+    position: absolute!Important;
+    width: 1000px;
+    margin: 32vh 22vw!important;
+  }
+
+  .about p{
+    font-size: 1.5rem;
   }
