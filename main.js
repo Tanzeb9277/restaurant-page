@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector("#content").append(function(){let e=document.createElement("div");return e.innerHTML=' <ul>\n        <li id="home">Home</li>\n        <li>Meun</li>\n        <li>About</li>\n    </ul>',document.addEventListener("click",(function(e){e.target&&"home"==e.target.id&&console.log("working")})),e}())})();
