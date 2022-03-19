@@ -12,6 +12,7 @@ document.addEventListener('click',function(e){
      }else if(e.target && e.target.id== 'tab2'){
         let mainElement = document.querySelector("#main");
           mainElement.innerHTML = "";
+          mainElement.style = "";
           mainElement.append(menu())
      }if(e.target && e.target.id== 'tab3'){
         let mainElement = document.querySelector("#main");

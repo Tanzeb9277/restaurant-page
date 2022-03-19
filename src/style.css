@@ -89,6 +89,51 @@ input + label {             /* box with rounded corner */
     border-radius: inherit;
   }
 
+  #menu{
+    width: 1045px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header{
+    flex: 1 1 0%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .menuContainer{
+    flex: 3 1 0%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 330px);
+    grid-template-rows: repeat(auto-fill, 168px);
+  }
+
+  .item-card{
+    background:white;
+    width:300px;
+    display:flex;
+    padding:10px;
+    gap:10px;
+    border-radius:15px;
+    box-shadow: 5px 5px 5px 1px #fde5ba;
+    
+  }
+  
+  .img-container img{
+    width:100%;
+  }
+  .item-card div{
+    flex:1
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
   .about{
     text-align: center;
     /* width: 1000px; */
